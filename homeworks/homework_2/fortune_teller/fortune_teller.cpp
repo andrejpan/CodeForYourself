@@ -24,7 +24,8 @@ int main() {
 
   const std::map<std::string, std::string> nouns{{"spring", "STL guru"}, {"summer", "C++ expert"}, {"autumn", "coding beast"}, {"winter", "software design hero"}};
   const std::array arr{"eats UB for breakfast", "finds errors quicker than the compiler", "is not afraid of C++ error messages"};
-
+  
+  std::cout << "\nHere is your description:" << std::endl;
   std::cout << name << ", the " << adjectives.at(name.size() % adjectives.size()) << " "; 
   std::cout << nouns.at(month) << " that " << arr.at(name.size() % arr.size()) << std::endl;
   return 0;
