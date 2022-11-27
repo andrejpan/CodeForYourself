@@ -18,7 +18,7 @@ int main() {
   std::string month{};  // Init empty
   std::cin >> month;
   std::cout << "Please enter an adjective:" << std::endl;
-  std::vector<std::string> adjectives = {};                
+  std::vector<std::string> adjectives = {};
   std::string input{};  // Init empty
   std::cin >> input;
   adjectives.emplace_back(input);
@@ -33,9 +33,9 @@ int main() {
   const std::array arr{"eats UB for breakfast",
                        "finds errors quicker than the compiler",
                        "is not afraid of C++ error messages"};
-  
+
   std::cout << "\nHere is your description:" << std::endl;
-  std::cout << name << ", the " << adjectives.at(name.size() % adjectives.size()) << " "; 
+  std::cout << name << ", the " << adjectives.at(name.size() % adjectives.size()) << " ";
   std::cout << nouns.at(month) << " that " << arr.at(name.size() % arr.size()) << std::endl;
   return 0;
 }
