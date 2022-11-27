@@ -7,7 +7,7 @@
 
 int main() {
   std::cout << "Welcome to the GUESSING GAME!\nI will generate a number and you will guess it!\n "
-               "Please provide the smallest number:"
+               "Please provide the smallest number: "
             << std::endl;
   int min, max, guess;
   std::cin >> min;
